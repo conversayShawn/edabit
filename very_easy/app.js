@@ -9,3 +9,4 @@ const convert = (h, m) => ((h*60)+m)*60
 
 // Compare Strings by Count of Characters
 const comp = (str1, str2) => str1.length === str2.length ? true : false
+const comp = (str1, str2) => str1.length === str2.length // refactor
