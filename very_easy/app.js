@@ -31,9 +31,21 @@ const calculateFuel = n => Math.max(100, n * 10); // refactor, Math.max
 
 // Create a function that takes two arguments. Both arguments are integers, a and b. 
 // Return true if one of them is 10 or if their sum is 10.
-const makesTen = (a, b) => {
-	if ((a + b) || (a || b) === 10) {
+// const makesTen = (a, b) => {
+// 	if ((a + b) || (a || b) === 10) {
+// 		return true
+// 	}
+// 	return false
+// }
+// FAILED - LOGIC WAS OFF
+function makesTen(a,b){
+	if(a ===10||b === 10){
 		return true
+	} else if(a+b === 10){
+		return true
+	} else {
+		return false
 	}
-	return false
 }
+let makesTen = (a,b)=> a + b == 10 ||a == 10 || b == 10; // refactor ternary
+const makesTen = (a , b) => [a , b , a + b].includes(10); // refactor, .includes()
