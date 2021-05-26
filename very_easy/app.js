@@ -27,3 +27,4 @@ const makePair = (...a) => a; // refactor, spread syntax
 // A vehicle needs 10 times the amount of fuel than the distance it travels. However, it must always carry a minimum of 100 fuel before setting off.
 // Create a function which calculates the amount of fuel it needs, given the distance.
 const calculateFuel = (n) => (n<=10) ? 100 : (n*10)
+const calculateFuel = n => Math.max(100, n * 10); // refactor, Math.max
