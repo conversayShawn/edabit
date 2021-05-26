@@ -28,3 +28,12 @@ const makePair = (...a) => a; // refactor, spread syntax
 // Create a function which calculates the amount of fuel it needs, given the distance.
 const calculateFuel = (n) => (n<=10) ? 100 : (n*10)
 const calculateFuel = n => Math.max(100, n * 10); // refactor, Math.max
+
+// Create a function that takes two arguments. Both arguments are integers, a and b. 
+// Return true if one of them is 10 or if their sum is 10.
+const makesTen = (a, b) => {
+	if ((a + b) || (a || b) === 10) {
+		return true
+	}
+	return false
+}
