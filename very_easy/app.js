@@ -49,3 +49,6 @@ function makesTen(a,b){
 }
 let makesTen = (a,b)=> a + b == 10 ||a == 10 || b == 10; // refactor ternary
 const makesTen = (a , b) => [a , b , a + b].includes(10); // refactor, .includes()
+
+// Given two strings, firstName and lastName, return a single string in the format "last, first".
+const concatName = (fN, lN) => (`${lN}, ${fN}`)
