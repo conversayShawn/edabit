@@ -58,3 +58,6 @@ const returnNegative = (n) => Math.abs(n) * -1
 const returnNegative = (n) => -Math.abs(n) // simple solution
 const returnNegative = (n) => Math.min(n,-n) // Math.min()
 const returnNegative = n => n > 0 ? n * -1 : n // ternary
+
+// Create a function that evaluates an equation
+const eq = (e) => eval(e) 
