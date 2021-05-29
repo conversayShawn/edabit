@@ -52,3 +52,5 @@ const makesTen = (a , b) => [a , b , a + b].includes(10); // refactor, .includes
 
 // Given two strings, firstName and lastName, return a single string in the format "last, first".
 const concatName = (fN, lN) => (`${lN}, ${fN}`)
+
+// Create a function that takes a number as an argument and returns negative of that number. Return negative numbers without any change.
