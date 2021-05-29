@@ -55,3 +55,4 @@ const concatName = (fN, lN) => (`${lN}, ${fN}`)
 
 // Create a function that takes a number as an argument and returns negative of that number. Return negative numbers without any change.
 const returnNegative = (n) => Math.abs(n) * -1
+const returnNegative = (n) => -Math.abs(n) //simple
