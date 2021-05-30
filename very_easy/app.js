@@ -61,3 +61,5 @@ const returnNegative = n => n > 0 ? n * -1 : n // ternary
 
 // Create a function that evaluates an equation
 const eq = (e) => eval(e) 
+
+// Create a function that takes a number n and returns the nth even number.
