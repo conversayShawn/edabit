@@ -65,3 +65,6 @@ const eq = (e) => eval(e)
 // Create a function that takes a number n and returns the nth even number.
 // const nthEven = (n) => n % 2 === 0 ? n : n + 1 FAILED - LOGIC WAS WRONG
 const nthEven = n => 2 * n - 2 // simple solution
+
+// Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
+const dividesEvenly = (a, b) => a % b === 0
