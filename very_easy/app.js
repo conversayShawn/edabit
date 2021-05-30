@@ -63,3 +63,5 @@ const returnNegative = n => n > 0 ? n * -1 : n // ternary
 const eq = (e) => eval(e) 
 
 // Create a function that takes a number n and returns the nth even number.
+// const nthEven = (n) => n % 2 === 0 ? n : n + 1 FAILED - LOGIC WAS WRONG
+const nthEven = n => 2 * n - 2
