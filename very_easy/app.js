@@ -75,3 +75,4 @@ const dividesEvenly = (a, b) => !(a % b) // not operator
 // Write a function that returns true if the given integer is even, and false if it's odd.
 const isEven = (n) => n % 2 === 0 ? true : false
 const isEven = (n) => n % 2 === 0 // simple
+const isEven = n => !(n % 2) // not operator
