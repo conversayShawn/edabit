@@ -70,3 +70,6 @@ const nthEven = n => 2 * n - 2 // simple solution
 const dividesEvenly = (a, b) => a % b === 0
 const dividesEvenly = (a, b) => a % b === 0 ? true : false // technically correct
 const dividesEvenly = (a, b) => !(a % b) // not operator
+
+// In the Code tab you will find a code that is missing a single character in order to pass the tests. However, YOUR GOAL is to submit a function as minimalist as possible. Use the tips in the Tips section down below.
+// Write a function that returns true if the given integer is even, and false if it's odd.
