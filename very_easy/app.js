@@ -68,3 +68,4 @@ const nthEven = n => 2 * n - 2 // simple solution
 
 // Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
 const dividesEvenly = (a, b) => a % b === 0
+const dividesEvenly = (a, b) => a % b === 0 ? true : false // technically correct
