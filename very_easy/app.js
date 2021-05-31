@@ -76,3 +76,6 @@ const dividesEvenly = (a, b) => !(a % b) // not operator
 const isEven = (n) => n % 2 === 0 ? true : false
 const isEven = (n) => n % 2 === 0 // simple
 const isEven = n => !(n % 2) // not operator
+
+// Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+const divisibleByFive = (n) => n % 5 === 0
