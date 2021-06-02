@@ -79,6 +79,7 @@ const isEven = n => !(n % 2) // not operator
 
 // Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
 const divisibleByFive = (n) => n % 5 === 0
+const divisibleByFive = (n) => !(n % 5) // not operator
 
 // Create a function that calculates the area of a rectangle. If the arguments are invalid, your function must return -1.
 const area = (h, w) => h > 0 && w > 0 ? h * w : -1
