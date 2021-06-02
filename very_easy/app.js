@@ -86,3 +86,4 @@ const area = (h, w) => h > 0 && w > 0 ? h * w : -1
 // Create a function that returns true if a string is empty and false otherwise.
 const isEmpty = (s) => s.length === 0
 const isEmpty = (s) => s !== '' ? false : true // not strictly equals
+const isEmpty = (s) => !s // not operator
