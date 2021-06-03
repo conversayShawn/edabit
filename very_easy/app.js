@@ -98,3 +98,4 @@ const leapYear = (y) => (y % 4 === 0) || (y % 100 === 0 && y % 400 === 0) ? true
 // 	They have parental supervision.
 // The function accepts two parameters, age and isSupervised. Return a boolean.
 const acceptIntoMovie = (a, iS) => a >= 15 || iS
+const acceptIntoMovie = (a, iS) => a < 15 && !iS // && and !
