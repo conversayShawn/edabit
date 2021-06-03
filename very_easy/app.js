@@ -99,3 +99,7 @@ const leapYear = (y) => (y % 4 === 0) || (y % 100 === 0 && y % 400 === 0) ? true
 // The function accepts two parameters, age and isSupervised. Return a boolean.
 const acceptIntoMovie = (a, iS) => a >= 15 || iS
 const acceptIntoMovie = (a, iS) => a < 15 && !iS // && and !
+
+// A bartender is writing a simple program to determine whether he should serve drinks to someone. He only serves drinks to people 18 and older and when he's not on break.
+// Given the person's age, and whether break time is in session, create a function which returns whether he should serve drinks.
+const shouldServeDrinks = (a, oB) => a >= 18 && !oB
