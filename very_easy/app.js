@@ -47,7 +47,7 @@ function makesTen(a,b){
 		return false
 	}
 }
-let makesTen = (a,b)=> a + b == 10 ||a == 10 || b == 10; // refactor ternary
+let makesTen = (a,b)=> a + b == 10 || a == 10 || b == 10; // refactor ternary
 const makesTen = (a , b) => [a , b , a + b].includes(10); // refactor, .includes()
 
 // Given two strings, firstName and lastName, return a single string in the format "last, first".
@@ -88,3 +88,7 @@ const area = (h, w) => h > 0 && w > 0 ? h * w : -1
 const isEmpty = (s) => s.length === 0
 const isEmpty = (s) => s !== '' ? false : true // not strictly equals
 const isEmpty = (s) => !s // not operator
+
+// A leap year happens every four years, so it's a year that is perfectly divisible by four. However, if the year is a multiple of 100 (1800, 1900, etc), the year must be divisible by 400.
+// Write a function that determines if the year is a leap year or not.
+const leapYear = (y) => (y % 4 === 0) || (y % 100 === 0 && y % 400 === 0) ? true : false
