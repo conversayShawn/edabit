@@ -9,3 +9,6 @@
 const bitwiseAND = (n1, n2) => n1 & n2
 const bitwiseOR = (n1, n2) => n1 | n2
 const bitwiseXOR = (n1, n2) => n1 ^ n2
+
+// Write a function that returns the length of a string. Make your function recursive.
+const length = (str) => str.length
