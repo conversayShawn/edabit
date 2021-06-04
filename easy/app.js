@@ -12,3 +12,4 @@ const bitwiseXOR = (n1, n2) => n1 ^ n2
 
 // Write a function that returns the length of a string. Make your function recursive.
 const length = (str) => str.length
+const length = ({ length }) => length // recursion param
