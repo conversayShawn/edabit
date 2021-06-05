@@ -16,3 +16,8 @@ const length = ({ length }) => length // recursion param
 
 // Write a function to reverse an array.
 const reverse = (arr) => arr.reverse()
+
+// The challenge is to try and fix this buggy code, given the inputs true and false. See the examples below for the expected output.
+const has_bugs = (buggy_code) => buggy_code ? "sad days" : "it's a good day" // corrected string from 'it's a good day' to "it's a good day"
+const has_bugs = (buggy_code) => buggy_code ? `sad days` : `it's a good day` // interpolation
+const has_bugs = (buggy_code) => buggy_code ? "sad days" : 'it\'s a good day' // single quotes backslash
