@@ -92,6 +92,7 @@ const isEmpty = (s) => !s // not operator
 // A leap year happens every four years, so it's a year that is perfectly divisible by four. However, if the year is a multiple of 100 (1800, 1900, etc), the year must be divisible by 400.
 // Write a function that determines if the year is a leap year or not.
 const leapYear = (y) => (y % 4 === 0) || (y % 100 === 0 && y % 400 === 0) ? true : false
+const leapYear = (y) => (y % 4 == 0) && (y % 100 != 0) || (y % 400 == 0)
 
 // Write a function that checks whether a person can watch an MA15+ rated movie. One of the following two conditions is required for admittance:
 // 	The person is at least 15 years old.
@@ -108,3 +109,6 @@ const shouldServeDrinks = (a, oB) => a >= 18 && !oB
 const stringInt = (str) => parseInt(str)
 const stringInt = (str) => +str
 const stringInt = (str) => Number
+
+// Create a function that calculates the area of a rectangle. If the arguments are invalid, your function must return -1
+const area = (h, w) => h && w > 0 ? h * w : -1
