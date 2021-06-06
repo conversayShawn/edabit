@@ -120,4 +120,5 @@ const add3 = (x) => x + 3
 const add5 = (x) => x + 5
 const add7 = (x) => x + 7
 const add11 = (x) => x + 11
-[2, 3, 5, 7, 11].forEach(n => global['add' + n] = (v) => n + v); // global variable
+[2, 3, 5, 7, 11].forEach(n => global['add' + n] = (v) => n + v) // global variable
+[2, 3, 5, 7, 11].forEach(n => this[`add${n}`] = x => x + n) // interpolation
