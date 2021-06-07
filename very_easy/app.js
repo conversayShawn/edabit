@@ -123,3 +123,6 @@ const add11 = (x) => x + 11
 [2, 3, 5, 7, 11].forEach(n => global['add' + n] = (v) => n + v) // global variable
 [2, 3, 5, 7, 11].forEach(n => this[`add${n}`] = x => x + n) // interpolation
 [2, 3, 5, 7, 11].map(n => eval(`add${n} = x => x + n`)) // interpolation w/ map
+
+// Create a function that takes an equation (e.g. "1+1"), and returns the answer.
+const equation = (s) => eval(s)
