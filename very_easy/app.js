@@ -126,3 +126,5 @@ const add11 = (x) => x + 11
 
 // Create a function that takes an equation (e.g. "1+1"), and returns the answer.
 const equation = (s) => eval(s)
+
+// Given an object containing counts of both upvotes and downvotes, return what vote count should be displayed. This is calculated by subtracting the number of downvotes from upvotes.
