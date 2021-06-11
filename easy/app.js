@@ -21,3 +21,8 @@ const reverse = (arr) => arr.reverse()
 const has_bugs = (buggy_code) => buggy_code ? "sad days" : "it's a good day" // corrected string from 'it's a good day' to "it's a good day"
 const has_bugs = (buggy_code) => buggy_code ? `sad days` : `it's a good day` // interpolation
 const has_bugs = (buggy_code) => buggy_code ? "sad days" : 'it\'s a good day' // single quotes backslash
+
+// This challenge will help you interpret mathematical relationships both algebraically and geometrically.
+// Matchstick Houses, Steps 1, 2 and 3
+// Create a function that takes a number (step) as an argument and returns the number of matchsticks in that step. See step 1, 2 and 3 in the image above.
+const matchHouses = (s) => s > 0 ? (s * 6) - (s - 1) : 0 // ternary
