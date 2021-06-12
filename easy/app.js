@@ -27,3 +27,6 @@ const has_bugs = (buggy_code) => buggy_code ? "sad days" : 'it\'s a good day' //
 // Create a function that takes a number (step) as an argument and returns the number of matchsticks in that step. See step 1, 2 and 3 in the image above.
 const matchHouses = (s) => s > 0 ? (s * 6) - (s - 1) : 0 // ternary
 const matchHouses = (s) => s === 0 ? 0 : 5 * s + 1 // alternate equation
+
+// Write a template string according to the following example
+const format = (a, b, c) => `Their names were: ${a}, ${b} and ${c}.`
