@@ -133,3 +133,4 @@ const getVoteCount = ({ upvotes, downvotes }) => upvotes - downvotes // store va
 const getVoteCount = (v) => v['upvotes'] - v['downvotes'] // store value of index
 
 // Given a string, return true if its length is even or false if the length is odd.
+const oddOrEven = (s) => s.length % 2 === 0
