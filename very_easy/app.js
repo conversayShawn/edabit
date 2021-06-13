@@ -131,3 +131,5 @@ const equation = (s) => eval(s)
 const getVoteCount = (v) => v.upvotes - v.downvotes
 const getVoteCount = ({ upvotes, downvotes }) => upvotes - downvotes // store value of objects
 const getVoteCount = (v) => v['upvotes'] - v['downvotes'] // store value of index
+
+// Given a string, return true if its length is even or false if the length is odd.
