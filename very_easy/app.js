@@ -129,3 +129,4 @@ const equation = (s) => eval(s)
 
 // Given an object containing counts of both upvotes and downvotes, return what vote count should be displayed. This is calculated by subtracting the number of downvotes from upvotes.
 const getVoteCount = (v) => v.upvotes - v.downvotes
+const getVoteCount = ({ upvotes, downvotes }) => upvotes - downvotes
