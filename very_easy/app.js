@@ -135,3 +135,6 @@ const getVoteCount = (v) => v['upvotes'] - v['downvotes'] // store value of inde
 // Given a string, return true if its length is even or false if the length is odd.
 const oddOrEven = (s) => s.length % 2 === 0
 const oddOrEven = (s) => !(s.length % 2) // modulo
+
+// The ternary operator (sometimes called Conditional Expressions) in JavaScript is an alternative to the if... else... statement.
+const yeah_nope = (bool) => bool ? "yeah" : "nope"
