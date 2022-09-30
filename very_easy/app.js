@@ -11,3 +11,8 @@ cubes=(a)=>a**3
 function calcAge(age) {
 	return (age*365)
 }
+function calcAge(age) {
+	let ageInDays = (age*365)>=0 && typeof(age*365) == 'number' ? (age*365) : []
+	return ageInDays
+}
+calcAge=(age)=>age*365
