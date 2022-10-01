@@ -68,3 +68,4 @@ var getFirstValue = arr => Array.isArray(arr) ? arr[0] : "error";
 getFirstValue = _ => _[0]
 
 // Return the Remainder from Two Numbers
+remainder = (x, y) => x%y
