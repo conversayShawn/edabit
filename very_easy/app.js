@@ -73,3 +73,12 @@ remainder = (x, y) => x%y
 // Less Than 100?
 lessThan100 = (a, b) => (a+b) < 100 ? true : false
 const lessThan100 = (a, b) => (a + b) < 100
+
+// Basic variable assignment
+// A student learning JavaScript was trying to make a function. His code should concatenate a passed string name with string "Edabit" and store it in a variable called result. He needs your help to fix this code.
+const nameString = (name) => {
+	let b = "Edabit"
+	let result = name + b
+  	return result
+}
+const nameString = (name) => `${name}Edabit`
