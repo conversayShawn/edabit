@@ -16,3 +16,11 @@ function calcAge(age) {
 	return ageInDays
 }
 calcAge=(age)=>age*365
+
+// Write a function that converts hours into seconds.
+howManySeconds = (hours) => (hours*60*60)
+function howManySeconds(hours) {
+	const mins = 60;
+	const seconds = 60;
+	return hours * mins * seconds 
+}
