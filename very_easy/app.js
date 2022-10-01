@@ -1,4 +1,4 @@
-// Fix the code in the code tab to pass this challenge (only syntax errors). Look at the examples below to get an idea of what the function should do.
+// Fix the syntax
 function cubes(a) {
 	return a ** 3
 }
@@ -7,7 +7,7 @@ const cubes = (a) => {
 }
 cubes=(a)=>a**3
 
-// Create a function that takes the age in years and returns the age in days.
+// Age in years to age in days
 function calcAge(age) {
 	return (age*365)
 }
@@ -17,7 +17,7 @@ function calcAge(age) {
 }
 calcAge=(age)=>age*365
 
-// Write a function that converts hours into seconds.
+// Hours to seconds.
 howManySeconds = (hours) => (hours*60*60)
 function howManySeconds(hours) {
 	const mins = 60;
@@ -25,17 +25,17 @@ function howManySeconds(hours) {
 	return hours * mins * seconds 
 }
 
-// Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+// Number increments by +1 and returns the result.
 addition = (num) => (num+1)
 function addition(num) {
 	return ++num
 }
 addition = (num) => ++num
 
-// Write a function that takes the base and height of a triangle and return its area.
+// Return the area when provided the base and height of a triangle
 triArea = (b, h) => (b*h)/2
 
-// Create a function that takes a number as its only argument and returns true if it's less than or equal to zero, otherwise return false.
+// True if less than or equal to zero, otherwise return false.
 lessThanOrEqualToZero = (num) => num <= 0 ? true : false
 const lessThanOrEqualToZero = num => num <= 0;
 function lessThanOrEqualToZero(num) {
@@ -43,7 +43,7 @@ function lessThanOrEqualToZero(num) {
 	return false;
 }
 
-// Create a function that takes two numbers as arguments and returns their sum.
+// Takes two numbers as arguments and returns their sum.
 addition = (a, b) => a+b
 function addition(a, b) {
     if (typeof a !== "number" || typeof b !== "number") {
@@ -52,17 +52,19 @@ function addition(a, b) {
     return a + b;
 }
 
-// Write a function that takes an integer minutes and converts it to seconds.
+// Minutes converted to seconds.
 convert = (minutes) => minutes*60
 function convert(minutes) {
 	const seconds = minutes*60;
 	return seconds;
 }
 
-// Create a function that takes an array containing only numbers and return the first element.
+// Array containing only numbers returns the first element.
 getFirstValue = (arr) => arr[0]
 function getFirstValue(arr) {
 	return arr.shift();
 }
 var getFirstValue = arr => Array.isArray(arr) ? arr[0] : "error";
 getFirstValue = _ => _[0]
+
+// Return the Remainder from Two Numbers
