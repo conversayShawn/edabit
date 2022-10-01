@@ -69,3 +69,7 @@ getFirstValue = _ => _[0]
 
 // Return the Remainder from Two Numbers
 remainder = (x, y) => x%y
+
+// Less Than 100?
+lessThan100 = (a, b) => (a+b) < 100 ? true : false
+const lessThan100 = (a, b) => (a + b) < 100
