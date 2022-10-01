@@ -51,3 +51,10 @@ function addition(a, b) {
     }
     return a + b;
 }
+
+// Write a function that takes an integer minutes and converts it to seconds.
+convert = (minutes) => minutes*60
+function convert(minutes) {
+	const seconds = minutes*60;
+	return seconds;
+}
