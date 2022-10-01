@@ -81,4 +81,5 @@ const nameString = (name) => {
 	let result = name + b
   	return result
 }
-const nameString = (name) => `${name}Edabit`
+
+const nameString2 = (name) => `${name}Edabit` // updated function name because nameString is already declared with const
