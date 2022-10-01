@@ -24,3 +24,10 @@ function howManySeconds(hours) {
 	const seconds = 60;
 	return hours * mins * seconds 
 }
+
+// Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+addition = (num) => (num+1)
+function addition(num) {
+	return ++num
+}
+addition = (num) => ++num
