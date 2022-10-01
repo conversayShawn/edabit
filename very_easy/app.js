@@ -58,3 +58,11 @@ function convert(minutes) {
 	const seconds = minutes*60;
 	return seconds;
 }
+
+// Create a function that takes an array containing only numbers and return the first element.
+getFirstValue = (arr) => arr[0]
+function getFirstValue(arr) {
+	return arr.shift();
+}
+var getFirstValue = arr => Array.isArray(arr) ? arr[0] : "error";
+getFirstValue = _ => _[0]
