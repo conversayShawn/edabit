@@ -42,3 +42,12 @@ function lessThanOrEqualToZero(num) {
 	if (num <= 0) { return true; }
 	return false;
 }
+
+// Create a function that takes two numbers as arguments and returns their sum.
+addition = (a, b) => a+b
+function addition(a, b) {
+    if (typeof a !== "number" || typeof b !== "number") {
+        return "Sorry but you didn't pass two numbers.";
+    }
+    return a + b;
+}
