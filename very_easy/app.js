@@ -86,3 +86,14 @@ const nameString2 = (name) => `${name}Edabit` // updated function name because n
 
 // Calculated power from voltage and current
 const circuitPower = (v,c) => v*c
+
+// Find the maximum range of a triangle's third edge, where the side lengths are all integers.
+const nextEdge = (s1, s2) => (s1+s2)-1
+function nextEdge(side1, side2) {
+	if(side1 > 0 && side2 > 0) {
+		return (side1 + side2) - 1;
+	}else {
+		return;
+	}
+}
+
