@@ -99,3 +99,14 @@ function nextEdge(side1, side2) {
 
 // Find the Perimeter of a Rectangle
 const findPerimeter = (l, w) => (l+w)*2
+
+// Fix the code in the code tab
+function squared(b) {
+	return b*b
+}
+function squared(b) {
+	return Math.pow(b,2);
+}
+function squared(b) {
+	return b ** 2;
+}
