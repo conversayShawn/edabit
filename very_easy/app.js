@@ -97,3 +97,5 @@ function nextEdge(side1, side2) {
 	}
 }
 
+// Find the Perimeter of a Rectangle
+const findPerimeter = (l, w) => (l+w)*2
