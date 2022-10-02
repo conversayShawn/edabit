@@ -83,3 +83,6 @@ const nameString = (name) => {
 }
 
 const nameString2 = (name) => `${name}Edabit` // updated function name because nameString is already declared with const
+
+// Calculated power from voltage and current
+const circuitPower = (v,c) => v*c
