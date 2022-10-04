@@ -139,3 +139,6 @@ printArray = n => Array.from({length: n}, (_, i) => i + 1)
 
 // Equality check
 const checkEquality = (a, b) => a === b
+
+// Sum of polygon angles
+const sumPolygon = (n) => (n-2)*180
