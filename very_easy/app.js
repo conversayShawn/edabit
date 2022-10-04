@@ -131,14 +131,28 @@ const printArray = (number) => {
 
   return newArray;
 };
-const printArray1 = n => Array(...Array(n)).map((v, i) => i + 1);
-let printArray2 = n => [...Array(n)].map((a,b)=> 1 + b * 1);
-const printArray3 = num => [...Array(num + 1).keys()].slice(1);
-printArray = (n) => Array.from({length:n}, (_,i) => i + 1)
-printArray = n => Array.from({length: n}, (_, i) => i + 1)
+const printArray1 = (n) => Array(...Array(n)).map((v, i) => i + 1);
+let printArray2 = (n) => [...Array(n)].map((a, b) => 1 + b * 1);
+const printArray3 = (num) => [...Array(num + 1).keys()].slice(1);
+printArray = (n) => Array.from({ length: n }, (_, i) => i + 1);
+printArray = (n) => Array.from({ length: n }, (_, i) => i + 1);
 
 // Equality check
-const checkEquality = (a, b) => a === b
+const checkEquality = (a, b) => a === b;
 
 // Sum of polygon angles
-const sumPolygon = (n) => (n-2)*180
+const sumPolygon = (n) => (n - 2) * 180;
+
+// Buggy Code (Part 7)
+const swap = (a, b) => {
+  let c = a;
+  let d = b;
+  b = c;
+  a = d;
+  return [a, b];
+};
+const swap1 = (a, b) => [b, a];
+function swap(a, b) {
+  [a, b] = [b, a];
+  return [a, b];
+}
