@@ -136,3 +136,6 @@ let printArray2 = n => [...Array(n)].map((a,b)=> 1 + b * 1);
 const printArray3 = num => [...Array(num + 1).keys()].slice(1);
 printArray = (n) => Array.from({length:n}, (_,i) => i + 1)
 printArray = n => Array.from({length: n}, (_, i) => i + 1)
+
+// Equality check
+const checkEquality = (a, b) => a === b
