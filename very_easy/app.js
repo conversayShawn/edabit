@@ -110,3 +110,10 @@ function squared(b) {
 function squared(b) {
 	return b ** 2;
 }
+
+// Return the string "something" joined with a space " " and the given argument a.
+const giveMeSomething = (a) => `something ${a}`
+function giveMeSomething(a) {
+	let b="something ";
+	return b.concat(a) 
+}
