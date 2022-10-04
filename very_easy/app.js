@@ -1,119 +1,138 @@
 // Fix the syntax
 function cubes(a) {
-	return a ** 3
+  return a ** 3;
 }
 const cubes = (a) => {
-	return a**3
-}
-cubes=(a)=>a**3
+  return a ** 3;
+};
+cubes = (a) => a ** 3;
 
 // Age in years to age in days
 function calcAge(age) {
-	return (age*365)
+  return age * 365;
 }
 function calcAge(age) {
-	let ageInDays = (age*365)>=0 && typeof(age*365) == 'number' ? (age*365) : []
-	return ageInDays
+  let ageInDays =
+    age * 365 >= 0 && typeof (age * 365) == "number" ? age * 365 : [];
+  return ageInDays;
 }
-calcAge=(age)=>age*365
+calcAge = (age) => age * 365;
 
 // Hours to seconds.
-howManySeconds = (hours) => (hours*60*60)
+howManySeconds = (hours) => hours * 60 * 60;
 function howManySeconds(hours) {
-	const mins = 60;
-	const seconds = 60;
-	return hours * mins * seconds 
+  const mins = 60;
+  const seconds = 60;
+  return hours * mins * seconds;
 }
 
 // Number increments by +1 and returns the result.
-addition = (num) => (num+1)
+addition = (num) => num + 1;
 function addition(num) {
-	return ++num
+  return ++num;
 }
-addition = (num) => ++num
+addition = (num) => ++num;
 
 // Return the area when provided the base and height of a triangle
-triArea = (b, h) => (b*h)/2
+triArea = (b, h) => (b * h) / 2;
 
 // True if less than or equal to zero, otherwise return false.
-lessThanOrEqualToZero = (num) => num <= 0 ? true : false
-const lessThanOrEqualToZero = num => num <= 0;
+lessThanOrEqualToZero = (num) => (num <= 0 ? true : false);
+const lessThanOrEqualToZero = (num) => num <= 0;
 function lessThanOrEqualToZero(num) {
-	if (num <= 0) { return true; }
-	return false;
+  if (num <= 0) {
+    return true;
+  }
+  return false;
 }
 
 // Takes two numbers as arguments and returns their sum.
-addition = (a, b) => a+b
+addition = (a, b) => a + b;
 function addition(a, b) {
-    if (typeof a !== "number" || typeof b !== "number") {
-        return "Sorry but you didn't pass two numbers.";
-    }
-    return a + b;
+  if (typeof a !== "number" || typeof b !== "number") {
+    return "Sorry but you didn't pass two numbers.";
+  }
+  return a + b;
 }
 
 // Minutes converted to seconds.
-convert = (minutes) => minutes*60
+convert = (minutes) => minutes * 60;
 function convert(minutes) {
-	const seconds = minutes*60;
-	return seconds;
+  const seconds = minutes * 60;
+  return seconds;
 }
 
 // Array containing only numbers returns the first element.
-getFirstValue = (arr) => arr[0]
+getFirstValue = (arr) => arr[0];
 function getFirstValue(arr) {
-	return arr.shift();
+  return arr.shift();
 }
-var getFirstValue = arr => Array.isArray(arr) ? arr[0] : "error";
-getFirstValue = _ => _[0]
+var getFirstValue = (arr) => (Array.isArray(arr) ? arr[0] : "error");
+getFirstValue = (_) => _[0];
 
 // Return the Remainder from Two Numbers
-remainder = (x, y) => x%y
+remainder = (x, y) => x % y;
 
 // Less Than 100?
-lessThan100 = (a, b) => (a+b) < 100 ? true : false
-const lessThan100 = (a, b) => (a + b) < 100
+lessThan100 = (a, b) => (a + b < 100 ? true : false);
+const lessThan100 = (a, b) => a + b < 100;
 
 // Basic variable assignment
 // A student learning JavaScript was trying to make a function. His code should concatenate a passed string name with string "Edabit" and store it in a variable called result. He needs your help to fix this code.
 const nameString = (name) => {
-	let b = "Edabit"
-	let result = name + b
-  	return result
-}
+  let b = "Edabit";
+  let result = name + b;
+  return result;
+};
 
-const nameString2 = (name) => `${name}Edabit` // updated function name because nameString is already declared with const
+const nameString2 = (name) => `${name}Edabit`; // updated function name because nameString is already declared with const
 
 // Calculated power from voltage and current
-const circuitPower = (v,c) => v*c
+const circuitPower = (v, c) => v * c;
 
 // Find the maximum range of a triangle's third edge, where the side lengths are all integers.
-const nextEdge = (s1, s2) => (s1+s2)-1
+const nextEdge = (s1, s2) => s1 + s2 - 1;
 function nextEdge(side1, side2) {
-	if(side1 > 0 && side2 > 0) {
-		return (side1 + side2) - 1;
-	}else {
-		return;
-	}
+  if (side1 > 0 && side2 > 0) {
+    return side1 + side2 - 1;
+  } else {
+    return;
+  }
 }
 
 // Find the Perimeter of a Rectangle
-const findPerimeter = (l, w) => (l+w)*2
+const findPerimeter = (l, w) => (l + w) * 2;
 
 // Fix the code in the code tab
 function squared(b) {
-	return b*b
+  return b * b;
 }
 function squared(b) {
-	return Math.pow(b,2);
+  return Math.pow(b, 2);
 }
 function squared(b) {
-	return b ** 2;
+  return b ** 2;
 }
 
 // Return the string "something" joined with a space " " and the given argument a.
-const giveMeSomething = (a) => `something ${a}`
+const giveMeSomething = (a) => `something ${a}`;
 function giveMeSomething(a) {
-	let b="something ";
-	return b.concat(a) 
+  let b = "something ";
+  return b.concat(a);
 }
+
+// Buggy Code (Part 5)
+const printArray = (number) => {
+  let newArray = [];
+
+  for (let i = 1; i <= number; i++) {
+    newArray.push(i);
+  }
+
+  return newArray;
+};
+const printArray1 = n => Array(...Array(n)).map((v, i) => i + 1);
+let printArray2 = n => [...Array(n)].map((a,b)=> 1 + b * 1);
+const printArray3 = num => [...Array(num + 1).keys()].slice(1);
+printArray = (n) => Array.from({length:n}, (_,i) => i + 1)
+printArray = n => Array.from({length: n}, (_, i) => i + 1)
