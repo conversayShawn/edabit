@@ -160,3 +160,7 @@ function swap(a, b) {
 // Given the amount of 2-pointers scored and 3-pointers scored, return that value.
 const points = (two, three) => ((two*2)+(three*3))
 const points1 = (a,b,c = a*2+b*3) => c
+
+// Return true if and only if x is equal to 7
+const isSeven = (x) => x===7
+const isSeven1 = x => x === 7 // no ()
