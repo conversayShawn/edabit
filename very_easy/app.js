@@ -164,3 +164,12 @@ const points1 = (a,b,c = a*2+b*3) => c
 // Return true if and only if x is equal to 7
 const isSeven = (x) => x===7
 const isSeven1 = x => x === 7 // no ()
+
+// How many legs
+const animals = (ch,co,p,t = ch*2+co*4+p*4) => t
+function animals(chickens, cows, pigs) {
+	chickens *= 2;
+	cows *= 4;
+	pigs *= 4;
+	return chickens + cows + pigs;
+}
