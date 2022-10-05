@@ -173,3 +173,6 @@ function animals(chickens, cows, pigs) {
 	pigs *= 4;
 	return chickens + cows + pigs;
 }
+
+// Using the "&&" Operator
+const and = (a, b) => a&&b
