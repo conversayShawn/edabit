@@ -156,3 +156,7 @@ function swap(a, b) {
   [a, b] = [b, a];
   return [a, b];
 }
+
+// Given the amount of 2-pointers scored and 3-pointers scored, return that value.
+const points = (two, three) => ((two*2)+(three*3))
+const points1 = (a,b,c = a*2+b*3) => c
