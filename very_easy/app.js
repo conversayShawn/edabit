@@ -176,3 +176,7 @@ function animals(chickens, cows, pigs) {
 
 // Using the "&&" Operator
 const and = (a, b) => a&&b
+
+// Convert hours and minutes to seconds
+const convert = (h,m,s = h*3600+m*60) => s
+convert=(h,m)=>(h*60+m)*60
