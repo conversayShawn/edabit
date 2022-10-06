@@ -201,3 +201,6 @@ const calculator2 = eval
 // Buggy Code (Part 4)
 const greeting = (name) => name === "Mubashir" ? `Hello, my Love!` : `Hello, ${name}!`
 greeting=a=>`Hello, ${a=='Mubashir'?'my Love':a}!`
+
+// Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
+const frames = (min, fps) => min*(fps*60)
