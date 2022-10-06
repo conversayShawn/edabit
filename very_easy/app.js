@@ -204,3 +204,4 @@ greeting=a=>`Hello, ${a=='Mubashir'?'my Love':a}!`
 
 // Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
 const frames = (min, fps) => min*(fps*60)
+const frames1 = (m, f) => m * f * 60;
