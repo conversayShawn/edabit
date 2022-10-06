@@ -180,3 +180,6 @@ const and = (a, b) => a&&b
 // Convert hours and minutes to seconds
 const convert = (h,m,s = h*3600+m*60) => s
 convert=(h,m)=>(h*60+m)*60
+
+// Return true when num1 is equal to num2; otherwise return false
+const isSameNum = (num1, num2) => num1===num2
