@@ -192,3 +192,8 @@ function boolToString(flag){
 function boolToString(flag){
 	return flag ? 'true' : 'false';
 }
+
+// Create a function that will handle simple math expressions. The input is an expression in the form of a string.
+const calculator = (str) => eval(str)
+const calculator1 = str => eval(str)
+const calculator2 = eval
