@@ -183,3 +183,12 @@ convert=(h,m)=>(h*60+m)*60
 
 // Return true when num1 is equal to num2; otherwise return false
 const isSameNum = (num1, num2) => num1===num2
+
+// Create a function that takes a boolean variable flag and returns it as a string
+const boolToString = (flag) => flag.toString()
+function boolToString(flag){
+	return `${flag}`;
+}
+function boolToString(flag){
+	return flag ? 'true' : 'false';
+}
