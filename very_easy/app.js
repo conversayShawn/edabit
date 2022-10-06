@@ -197,3 +197,7 @@ function boolToString(flag){
 const calculator = (str) => eval(str)
 const calculator1 = str => eval(str)
 const calculator2 = eval
+
+// Buggy Code (Part 4)
+const greeting = (name) => name === "Mubashir" ? `Hello, my Love!` : `Hello, ${name}!`
+greeting=a=>`Hello, ${a=='Mubashir'?'my Love':a}!`
