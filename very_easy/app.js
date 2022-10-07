@@ -221,3 +221,6 @@ const makesTen1 = (a, b) => [a,b,a+b].includes(10)
 // Create a function which calculates the amount of fuel it needs, given the distance.
 const calculateFuel = (n) => n*10<=100?100:n*10
 const calculateFuel1 = (n) => Math.max(100,n*10)
+
+// Create a function that returns the given argument, but by using an arrow function.
+const arrowFunc = n => n
