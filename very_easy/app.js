@@ -158,69 +158,77 @@ function swap(a, b) {
 }
 
 // Given the amount of 2-pointers scored and 3-pointers scored, return that value.
-const points = (two, three) => ((two*2)+(three*3))
-const points1 = (a,b,c = a*2+b*3) => c
+const points = (two, three) => two * 2 + three * 3;
+const points1 = (a, b, c = a * 2 + b * 3) => c;
 
 // Return true if and only if x is equal to 7
-const isSeven = (x) => x===7
-const isSeven1 = x => x === 7 // no ()
+const isSeven = (x) => x === 7;
+const isSeven1 = (x) => x === 7; // no ()
 
 // How many legs
-const animals = (ch,co,p,t = ch*2+co*4+p*4) => t
+const animals = (ch, co, p, t = ch * 2 + co * 4 + p * 4) => t;
 function animals(chickens, cows, pigs) {
-	chickens *= 2;
-	cows *= 4;
-	pigs *= 4;
-	return chickens + cows + pigs;
+  chickens *= 2;
+  cows *= 4;
+  pigs *= 4;
+  return chickens + cows + pigs;
 }
 
 // Using the "&&" Operator
-const and = (a, b) => a&&b
+const and = (a, b) => a && b;
 
 // Convert hours and minutes to seconds
-const convert = (h,m,s = h*3600+m*60) => s
-convert=(h,m)=>(h*60+m)*60
+const convert = (h, m, s = h * 3600 + m * 60) => s;
+convert = (h, m) => (h * 60 + m) * 60;
 
 // Return true when num1 is equal to num2; otherwise return false
-const isSameNum = (num1, num2) => num1===num2
+const isSameNum = (num1, num2) => num1 === num2;
 
 // Create a function that takes a boolean variable flag and returns it as a string
-const boolToString = (flag) => flag.toString()
-function boolToString(flag){
-	return `${flag}`;
+const boolToString = (flag) => flag.toString();
+function boolToString(flag) {
+  return `${flag}`;
 }
-function boolToString(flag){
-	return flag ? 'true' : 'false';
+function boolToString(flag) {
+  return flag ? "true" : "false";
 }
 
 // Create a function that will handle simple math expressions. The input is an expression in the form of a string.
-const calculator = (str) => eval(str)
-const calculator1 = str => eval(str)
-const calculator2 = eval
+const calculator = (str) => eval(str);
+const calculator1 = (str) => eval(str);
+const calculator2 = eval;
 
 // Buggy Code (Part 4)
-const greeting = (name) => name === "Mubashir" ? `Hello, my Love!` : `Hello, ${name}!`
-greeting=a=>`Hello, ${a=='Mubashir'?'my Love':a}!`
+const greeting = (name) =>
+  name === "Mubashir" ? `Hello, my Love!` : `Hello, ${name}!`;
+greeting = (a) => `Hello, ${a == "Mubashir" ? "my Love" : a}!`;
 
 // Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
-const frames = (min, fps) => min*(fps*60)
+const frames = (min, fps) => min * (fps * 60);
 const frames1 = (m, f) => m * f * 60;
 
 // Create a function that takes the number of wins, draws and losses and calculates the number of points a football team has obtained so far.
-const footballPoints = (w, d, l) => w*3+d
+const footballPoints = (w, d, l) => w * 3 + d;
 function footballPoints(wins, draws, losses) {
-	footballPoints[0] * 3 + footballPoints[1]
+  footballPoints[0] * 3 + footballPoints[1];
 }
-return footballPoints
+return footballPoints;
 
 // Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
-const makesTen = (a, b) => (a===10)||(b===10)||(a+b===10)?true:false
-const makesTen1 = (a, b) => [a,b,a+b].includes(10)
+const makesTen = (a, b) =>
+  a === 10 || b === 10 || a + b === 10 ? true : false;
+const makesTen1 = (a, b) => [a, b, a + b].includes(10);
 
 // A vehicle needs 10 times the amount of fuel than the distance it travels. However, it must always carry a minimum of 100 fuel before setting off.
 // Create a function which calculates the amount of fuel it needs, given the distance.
-const calculateFuel = (n) => n*10<=100?100:n*10
-const calculateFuel1 = (n) => Math.max(100,n*10)
+const calculateFuel = (n) => (n * 10 <= 100 ? 100 : n * 10);
+const calculateFuel1 = (n) => Math.max(100, n * 10);
 
 // Create a function that returns the given argument, but by using an arrow function.
-const arrowFunc = n => n
+const arrowFunc = (n) => n;
+
+// Create a function that takes three arguments prob, prize, pay and returns true if prob * prize > pay; otherwise return false.
+const profitableGamble = (a, b, c) => a * b > c;
+function profitableGamble(prob, prize, pay) {
+  return prob * prize - pay > 0;
+}
