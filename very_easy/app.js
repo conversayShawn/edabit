@@ -249,3 +249,7 @@ const makePair4 = (...a) => a
 const maxNum = (n1,n2) => n1 > n2 ? n1 : (n1===n2 ? (n1,n2) : n2)
 const maxNum1 = (n1,n2) => Math.max
 const MaxNum2 = (...n) => Math.max(...n)
+
+// Submit a function as minimalist as possible
+const isEven = n => n%2===0
+const isEven2 = n => !(n%2)
