@@ -244,3 +244,8 @@ function makePair1(num1, num2) {
 }
 const makePair3 = (num1, num2) => [num1, num2]
 const makePair4 = (...a) => a
+
+// Buggy Code (Part 2)
+const maxNum = (n1,n2) => n1 > n2 ? n1 : (n1===n2 ? (n1,n2) : n2)
+const maxNum1 = (n1,n2) => Math.max
+const MaxNum2 = (...n) => Math.max(...n)
