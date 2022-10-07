@@ -216,3 +216,8 @@ return footballPoints
 // Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
 const makesTen = (a, b) => (a===10)||(b===10)||(a+b===10)?true:false
 const makesTen1 = (a, b) => [a,b,a+b].includes(10)
+
+// A vehicle needs 10 times the amount of fuel than the distance it travels. However, it must always carry a minimum of 100 fuel before setting off.
+// Create a function which calculates the amount of fuel it needs, given the distance.
+const calculateFuel = (n) => n*10<=100?100:n*10
+const calculateFuel1 = (n) => Math.max(100,n*10)
