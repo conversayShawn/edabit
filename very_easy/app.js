@@ -205,3 +205,10 @@ greeting=a=>`Hello, ${a=='Mubashir'?'my Love':a}!`
 // Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
 const frames = (min, fps) => min*(fps*60)
 const frames1 = (m, f) => m * f * 60;
+
+// Create a function that takes the number of wins, draws and losses and calculates the number of points a football team has obtained so far.
+const footballPoints = (w, d, l) => w*3+d
+function footballPoints(wins, draws, losses) {
+	footballPoints[0] * 3 + footballPoints[1]
+}
+return footballPoints
