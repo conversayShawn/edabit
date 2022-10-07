@@ -232,3 +232,15 @@ const profitableGamble = (a, b, c) => a * b > c;
 function profitableGamble(prob, prize, pay) {
   return prob * prize - pay > 0;
 }
+
+// Given two arguments, return an array which contains these two arguments.
+const makePair = (num1, num2) => {
+  let arr = [];
+  arr.push(num1, num2);
+  return arr;
+};
+function makePair1(num1, num2) {
+  return [...arguments]
+}
+const makePair3 = (num1, num2) => [num1, num2]
+const makePair4 = (...a) => a
