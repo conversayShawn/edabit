@@ -253,3 +253,6 @@ const MaxNum2 = (...n) => Math.max(...n)
 // Submit a function as minimalist as possible
 const isEven = n => n%2===0
 const isEven2 = n => !(n%2)
+
+// Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+const divisibleByFive = (n) => !(n%5)
