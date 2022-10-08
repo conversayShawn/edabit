@@ -259,3 +259,10 @@ const divisibleByFive = (n) => !(n%5)
 
 // Create a function that takes two strings as arguments and return either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
 const comp = (str1, str2) => str1.length===str2.length
+
+// Given two strings, firstName and lastName, return a single string in the format "last, first".
+const concatName = (f, l) => `${l}, ${f}`
+function concatName(f, l) {
+  let c = ", "
+  return l.concat(c, f)
+}
