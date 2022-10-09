@@ -266,3 +266,15 @@ function concatName(f, l) {
   let c = ", "
   return l.concat(c, f)
 }
+
+// Create a function that returns true if a string is empty and false otherwise.
+const isEmpty = (s) => s===""
+function isEmpty(s) {
+  return !s
+}
+function isEmpty(s) {
+  return s.length==0
+}
+function isEmpty(s) {
+  return s.length > 0 ? false : true
+}
