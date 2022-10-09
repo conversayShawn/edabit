@@ -290,3 +290,6 @@ const length3 = str => !str ? 0 : 1 + length(str.slice(1))
 const divisible = (num) => num%100===0
 const divisible1 = (num) => !(num%100)
 const divisible2 = (num) => !Boolean(num%100)
+
+// Create a function that calculates the area of a rectangle. If the arguments are invalid, your function must return -1.
+const area = (h, w) => h && w > 0 ? h * w : -1
