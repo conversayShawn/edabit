@@ -293,3 +293,7 @@ const divisible2 = (num) => !Boolean(num%100)
 
 // Create a function that calculates the area of a rectangle. If the arguments are invalid, your function must return -1.
 const area = (h, w) => h && w > 0 ? h * w : -1
+
+// Create a function that takes an equation (e.g. "1+1"), and returns the answer.
+const equation = (s) => eval(s)
+let equation1 = eval
