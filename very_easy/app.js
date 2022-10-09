@@ -278,3 +278,10 @@ function isEmpty(s) {
 function isEmpty(s) {
   return s.length > 0 ? false : true
 }
+
+// Write a function that returns the length of a string. Make your function recursive.
+const length = str => str.length
+// GUESSED ON THIS ONE, BUT GOT IT RIGHT. #TAG-TEAM
+const length1 = str => str == '' ? 0 : length(str.substring(1)) + 1
+const length2 = ({length2}) => length2
+const length3 = str => !str ? 0 : 1 + length(str.slice(1))
