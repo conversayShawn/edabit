@@ -297,3 +297,6 @@ const area = (h, w) => h && w > 0 ? h * w : -1
 // Create a function that takes an equation (e.g. "1+1"), and returns the answer.
 const equation = (s) => eval(s)
 let equation1 = eval
+
+// Create a function that evaluates an equation.
+let eq = eval
