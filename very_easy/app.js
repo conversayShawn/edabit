@@ -285,3 +285,8 @@ const length = str => str.length
 const length1 = str => str == '' ? 0 : length(str.substring(1)) + 1
 const length2 = ({length2}) => length2
 const length3 = str => !str ? 0 : 1 + length(str.slice(1))
+
+// Create a function that takes an integer and returns true if it's divisible by 100, otherwise return false.
+const divisible = (num) => num%100===0
+const divisible1 = (num) => !(num%100)
+const divisible2 = (num) => !Boolean(num%100)
