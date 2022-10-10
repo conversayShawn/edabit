@@ -328,3 +328,9 @@ function arr() {
   }
   return word
 }
+
+// Create a function that takes a string and returns it as an integer.
+const stringInt = (str) => parseInt(str)
+const stringInt1 = str => +str
+const stringInt2 = Number
+const stringInt3 = str => Number(str)
