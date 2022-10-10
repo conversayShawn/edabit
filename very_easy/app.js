@@ -318,3 +318,13 @@ const getVoteCount1 = votes => votes.upvotes - votes.downvotes
 
 // Buggy Code
 const has_bugs = (buggy_code) => buggy_code ? `sad days` : `it's a good day`
+
+// Write a function to reverse an array.
+const reverse = (arr) => arr.reverse()
+function arr() {
+  let word = []
+  for (letter of arr) {
+    word.unshift(letter)
+  }
+  return word
+}
