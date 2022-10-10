@@ -300,3 +300,6 @@ let equation1 = eval
 
 // Create a function that evaluates an equation.
 let eq = eval
+
+// Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
+const dividesEvenly = (a, b) => !(a%b)
