@@ -315,3 +315,6 @@ function getVoteCount(votes) {
 }
 const getVoteCount = ({upvotes,downvotes}) => upvotes - downvotes
 const getVoteCount1 = votes => votes.upvotes - votes.downvotes
+
+// Buggy Code
+const has_bugs = (buggy_code) => buggy_code ? `sad days` : `it's a good day`
