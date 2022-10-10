@@ -303,3 +303,15 @@ let eq = eval
 
 // Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
 const dividesEvenly = (a, b) => !(a%b)
+
+// Given an object containing counts of both upvotes and downvotes, return what vote count should be displayed. This is calculated by subtracting the number of downvotes from upvotes.
+// COULDN'T FIGURE THIS ONE OUT. #TAG-TEAM
+function getVoteCount(votes) {
+  return votes.upvotes - votes.downvotes
+}
+function getVoteCount(votes) {
+  const {upvotes,downvotes} = votes
+  return upvotes - downvotes
+}
+const getVoteCount = ({upvotes,downvotes}) => upvotes - downvotes
+const getVoteCount1 = votes => votes.upvotes - votes.downvotes
