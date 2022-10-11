@@ -370,3 +370,6 @@ const shouldServeDrinks = (a, b) => !(a<18 || b)
 
 // Write a function that uses the ternary operator to return "yeah" if bool is true, and "nope" otherwise.
 const yeah_nope = (bool) => bool ? `yeah` : `nope`
+
+// Write a function that returns the boolean true if the given number is zero, the string "positive" if the number is greater than zero or the string "negative" if it's smaller than zero.
+const equilibrium = (x) => x===0 ? true : (x<0 ? `negative` : `positive`)
