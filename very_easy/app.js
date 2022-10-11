@@ -374,3 +374,9 @@ const yeah_nope = (bool) => bool ? `yeah` : `nope`
 // Write a function that returns the boolean true if the given number is zero, the string "positive" if the number is greater than zero or the string "negative" if it's smaller than zero.
 const equilibrium = (x) => x===0 ? true : (x<0 ? `negative` : `positive`)
 const equilibrium1 = x => !x || `${x > 0 ? "posi" : "nega"}tive`;
+const equilibrium2 = x => ['negative',true,'positive'][Math.sign(x) + 1];
+
+// Create a function that accepts a measurement value in inches and returns the equivalent of the measurement value in feet.
+const inchesToFeet = (i) => i<12 ? 0 : i/12
+const inchesToFeet1 = (i) => Math.floor(i/12)
+const inchesToFeet2 = (i) => ~~(i/12)
