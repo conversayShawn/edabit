@@ -373,3 +373,4 @@ const yeah_nope = (bool) => bool ? `yeah` : `nope`
 
 // Write a function that returns the boolean true if the given number is zero, the string "positive" if the number is greater than zero or the string "negative" if it's smaller than zero.
 const equilibrium = (x) => x===0 ? true : (x<0 ? `negative` : `positive`)
+const equilibrium1 = x => !x || `${x > 0 ? "posi" : "nega"}tive`;
