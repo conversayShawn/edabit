@@ -334,3 +334,26 @@ const stringInt = (str) => parseInt(str)
 const stringInt1 = str => +str
 const stringInt2 = Number
 const stringInt3 = str => Number(str)
+
+// Use Lodash: _.drop, Drop the First Elements of an Array
+// COULDN'T FIGURE THIS ONE OUT. #TAG-TEAM
+const drop = (arr, val = 1) => {
+	return arr.slice(val);
+}
+const drop1 = (arr, val = 1) => arr.slice(val);
+function drop(arr, val = 1) {
+	for(var i = 0; i < val; i++)
+		arr.shift();
+	
+	return arr;
+}
+const drop = (arr, val = 1) => {
+	return arr.filter((z, index) => index >= val);
+}
+const drop = (arr, val = 1) => {
+	while (val != 0) {
+		arr.shift();
+		val--;
+	}
+	return arr;
+}
