@@ -416,3 +416,12 @@ const oddOrEven = (s) => s.length%2===0
 function oddOrEven(s) {
 	return !(s.length%2);
 }
+
+// Create a function that returns how many possible arrangements can come from a certain number of switches (on / off). In other words, for a given number of switches, how many different patterns of on and off can we have?
+const posCom = (n) => 2**n
+function posCom(num) {
+	return Math.pow(2, num)
+}
+function posCom(num) {
+	return 2 << (num - 1);
+}
