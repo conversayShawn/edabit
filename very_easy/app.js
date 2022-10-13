@@ -338,21 +338,21 @@ const stringInt3 = str => Number(str)
 // Use Lodash: _.drop, Drop the First Elements of an Array
 // COULDN'T FIGURE THIS ONE OUT. #TAG-TEAM
 const drop = (arr, val = 1) => {
-	return arr.slice(val);
+  return arr.slice(val);
 }
 const drop1 = (arr, val = 1) => arr.slice(val);
 function drop(arr, val = 1) {
-	for(var i = 0; i < val; i++)
-		arr.shift();
+  for(var i = 0; i < val; i++)
+  arr.shift();
 	
 	return arr;
 }
 const drop = (arr, val = 1) => {
-	return arr.filter((z, index) => index >= val);
+  return arr.filter((z, index) => index >= val);
 }
 const drop = (arr, val = 1) => {
-	while (val != 0) {
-		arr.shift();
+  while (val != 0) {
+    arr.shift();
 		val--;
 	}
 	return arr;
@@ -400,3 +400,13 @@ const leapYear = y => !(y&3 || y&15 && !(y%25));
 function leapYear(year){
   return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
 }
+
+// Create a function that accepts an array and returns the last item in the array.
+// COULDN'T FIGURE THIS ONE OUT. #TAG-TEAM
+function getLastItem(arr) {
+  return arr[arr.length - 1]
+}
+function getLastItem(arr) {
+  return arr.pop();
+}
+const getLastItem = a => a.slice(-1)[0];
