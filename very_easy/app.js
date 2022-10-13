@@ -380,3 +380,6 @@ const equilibrium2 = x => ['negative',true,'positive'][Math.sign(x) + 1];
 const inchesToFeet = (i) => i<12 ? 0 : i/12
 const inchesToFeet1 = (i) => Math.floor(i/12)
 const inchesToFeet2 = (i) => ~~(i/12)
+
+// Create a function that takes a number as an argument and returns negative of that number. Return negative numbers without any change.
+const returnNegative = (n) => Math.abs(n) * -1
