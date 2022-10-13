@@ -383,3 +383,20 @@ const inchesToFeet2 = (i) => ~~(i/12)
 
 // Create a function that takes a number as an argument and returns negative of that number. Return negative numbers without any change.
 const returnNegative = (n) => Math.abs(n) * -1
+function returnNegative(n){
+  return -Math.abs(n)
+}
+function returnNegative(n){
+  return n<0?n:n*-1
+}
+function returnNegative(n){
+  return Math.min(n,-n)
+}
+
+// Write a function that returns true if a year is a leap, otherwise return false.
+const leapYear = (y) => y%4===0 || y%400===0
+const leapYear = y => new Date(y,1,29).getDate() == 29;
+const leapYear = y => !(y&3 || y&15 && !(y%25));
+function leapYear(year){
+  return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+}
