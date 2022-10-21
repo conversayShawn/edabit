@@ -434,3 +434,8 @@ const leapYear = (y) => !(y%4 || !y%400)
 // COULDN'T FIGURE THIS ONE OUT. #TAG-TEAM
 const arr = [1, 2, 3, 4, 5, 6]
 let [a, b] = arr
+
+// I have a bucket containing an amount of navy blue paint and I'd like to paint as many walls as possible. Create a function that returns the number of complete walls that I can paint, before I need to head to the shops to buy more.
+// n is the number of square meters I can paint.
+// w and h are the widths and heights of a single wall in meters.
+const howManyWalls = (n, w, h) => Math.floor(n/(w*h))
