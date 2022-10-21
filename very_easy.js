@@ -414,18 +414,23 @@ const getLastItem = a => a.slice(-1)[0];
 // Given a string, return true if its length is even or false if the length is odd.
 const oddOrEven = (s) => s.length%2===0
 function oddOrEven(s) {
-	return !(s.length%2);
+  return !(s.length%2);
 }
 
 // Create a function that returns how many possible arrangements can come from a certain number of switches (on / off). In other words, for a given number of switches, how many different patterns of on and off can we have?
 const posCom = (n) => 2**n
 function posCom(num) {
-	return Math.pow(2, num)
+  return Math.pow(2, num)
 }
 function posCom(num) {
-	return 2 << (num - 1);
+  return 2 << (num - 1);
 }
 
 // A leap year happens every four years, so it's a year that is perfectly divisible by four. However, if the year is a multiple of 100 (1800, 1900, etc), the year must be divisible by 400.
 // Write a function that determines if the year is a leap year or not.
 const leapYear = (y) => !(y%4 || !y%400)
+
+// ES6: Destructuring Arrays I
+// COULDN'T FIGURE THIS ONE OUT. #TAG-TEAM
+const arr = [1, 2, 3, 4, 5, 6]
+let [a, b] = arr
