@@ -445,3 +445,12 @@ const howManyWalls = (n, w, h) => Math.floor(n/(w*h))
 // Assume that every month, someone gives birth to more people n.
 // Return the number of people there will be when the spaceship is complete.
 const futurePeople = (p, n) => p+(360*n)
+
+// Submit 5 functions as minimalist as possible.
+const add2 = (x) => x + 2
+const add3 = (x) => x + 3
+const add5 = (x) => x + 5
+const add7 = (x) => x + 7
+const add11 = (x) => x + 11
+
+[2, 3, 5, 7, 11].forEach((n) => eval(`add${n} = (x) => x + n`))
