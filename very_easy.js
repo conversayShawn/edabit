@@ -454,3 +454,8 @@ const add7 = (x) => x + 7
 const add11 = (x) => x + 11
 
 [2, 3, 5, 7, 11].forEach((n) => eval(`add${n} = (x) => x + n`))
+
+// Create a function that returns the opposite of the given boolean, as a number.
+const flipBool = (b) => b || 0 ? 0 : 1
+const flipBool1 = (b) => b ? 0 : 1
+const flipBool2 = (b) => (!b)*1
