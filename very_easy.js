@@ -439,3 +439,9 @@ let [a, b] = arr
 // n is the number of square meters I can paint.
 // w and h are the widths and heights of a single wall in meters.
 const howManyWalls = (n, w, h) => Math.floor(n/(w*h))
+
+// You must calculate the number of people there will be in three decades from now.
+// The variable population is the world population now.
+// Assume that every month, someone gives birth to more people n.
+// Return the number of people there will be when the spaceship is complete.
+const futurePeople = (p, n) => p+(360*n)
