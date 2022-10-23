@@ -459,3 +459,10 @@ const add11 = (x) => x + 11
 const flipBool = (b) => b || 0 ? 0 : 1
 const flipBool1 = (b) => b ? 0 : 1
 const flipBool2 = (b) => (!b)*1
+
+// Create a function that calculates the chance of being an imposter. The formula for the chances of being an imposter is 100 × (i / p) where i is the imposter count and p is the player count. Make sure to round the value to the nearest integer and return the value as a percentage.
+const imposterFormula = (i, p) => {
+	let imposter = Math.round(100*(i/p))
+	return `${imposter}%`
+}
+const imposterFormula1 = (i,p) => `${Math.round(100*(i/p))}%`
