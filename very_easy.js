@@ -466,3 +466,6 @@ const imposterFormula = (i, p) => {
 	return `${imposter}%`
 }
 const imposterFormula1 = (i,p) => `${Math.round(100*(i/p))}%`
+
+// Given a person's age and the number of times they've moved house as moves, return the average number of years that they've spent living in the same house.
+const yearsInOneHouse = (a,m) => Math.round(a/(m+1))
