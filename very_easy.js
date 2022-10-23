@@ -469,3 +469,10 @@ const imposterFormula1 = (i,p) => `${Math.round(100*(i/p))}%`
 
 // Given a person's age and the number of times they've moved house as moves, return the average number of years that they've spent living in the same house.
 const yearsInOneHouse = (a,m) => Math.round(a/(m+1))
+
+// Write a template string according to the following example:
+// const a = "John";
+// const b = "Joe";
+// const c = "Jack";
+// const template = "your template string" ➞ "Their names were:  John,  Joe  and  Jack."
+const format = (a, b, c) => `Their names were: ${a}, ${b} and ${c}.`
