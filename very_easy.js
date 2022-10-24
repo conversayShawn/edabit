@@ -476,3 +476,7 @@ const yearsInOneHouse = (a,m) => Math.round(a/(m+1))
 // const c = "Jack";
 // const template = "your template string" ➞ "Their names were:  John,  Joe  and  Jack."
 const format = (a, b, c) => `Their names were: ${a}, ${b} and ${c}.`
+
+// Create a function that takes a word and returns the new word without including the first character.
+const newWord = (str) => str.substring(1)
+const newWord1 = (str) => str.slice(1)
