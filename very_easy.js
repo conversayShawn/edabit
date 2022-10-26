@@ -480,3 +480,6 @@ const format = (a, b, c) => `Their names were: ${a}, ${b} and ${c}.`
 // Create a function that takes a word and returns the new word without including the first character.
 const newWord = (str) => str.substring(1)
 const newWord1 = (str) => str.slice(1)
+
+// Create a function that takes a base number and an exponent number and returns the calculation.
+const calculateExponent = (n, e) => n**e
