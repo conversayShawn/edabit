@@ -483,3 +483,4 @@ const newWord1 = (str) => str.slice(1)
 
 // Create a function that takes a base number and an exponent number and returns the calculation.
 const calculateExponent = (n, e) => n**e
+const calcExp = (n, e) => Math.pow(n,e)
