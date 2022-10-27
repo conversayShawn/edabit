@@ -484,3 +484,11 @@ const newWord1 = (str) => str.slice(1)
 // Create a function that takes a base number and an exponent number and returns the calculation.
 const calculateExponent = (n, e) => n**e
 const calcExp = (n, e) => Math.pow(n,e)
+
+// You need to create two functions to substitute toString() and parseInt(); A function called intToString() that converts integers into strings and a function called stringToInt() that converts strings into integers.
+const intToString = (num) => num.toSting()
+
+const stringToInt = (num) => parseInt(num)
+
+// Create a function to concatenate two integer arrays.
+const concat = (arr1, arr2) => arr1.concat(arr2)
