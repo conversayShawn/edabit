@@ -462,7 +462,7 @@ const flipBool2 = (b) => (!b)*1
 
 // Create a function that calculates the chance of being an imposter. The formula for the chances of being an imposter is 100 × (i / p) where i is the imposter count and p is the player count. Make sure to round the value to the nearest integer and return the value as a percentage.
 const imposterFormula = (i, p) => {
-	let imposter = Math.round(100*(i/p))
+  let imposter = Math.round(100*(i/p))
 	return `${imposter}%`
 }
 const imposterFormula1 = (i,p) => `${Math.round(100*(i/p))}%`
@@ -492,3 +492,7 @@ const stringToInt = (num) => parseInt(num)
 
 // Create a function to concatenate two integer arrays.
 const concat = (arr1, arr2) => arr1.concat(arr2)
+
+// Some basic arithmetic operators are +, -, *, /, and %. In this challenge you will be given three parameters, num1, num2, and an operator. Use the operator on number 1 and 2.
+// COULDN'T FIGURE THIS ONE OUT. #TAG-TEAM
+const operate = (num1, num2, operator) => eval(`${num1}${operator}${num2}`)
