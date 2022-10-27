@@ -496,3 +496,7 @@ const concat = (arr1, arr2) => arr1.concat(arr2)
 // Some basic arithmetic operators are +, -, *, /, and %. In this challenge you will be given three parameters, num1, num2, and an operator. Use the operator on number 1 and 2.
 // COULDN'T FIGURE THIS ONE OUT. #TAG-TEAM
 const operate = (num1, num2, operator) => eval(`${num1}${operator}${num2}`)
+
+// Create a function that finds the index of a given item.
+// COULDN'T FIGURE THIS ONE OUT. #TAG-TEAM
+const search = (arr, item) => arr.indexOf(item)
