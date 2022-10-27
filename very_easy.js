@@ -500,3 +500,6 @@ const operate = (num1, num2, operator) => eval(`${num1}${operator}${num2}`)
 // Create a function that finds the index of a given item.
 // COULDN'T FIGURE THIS ONE OUT. #TAG-TEAM
 const search = (arr, item) => arr.indexOf(item)
+
+// Create a function that takes an angle in radians and returns the corresponding angle in degrees.
+const radiansToDegrees = (r) => r*180/Math.PI
