@@ -503,3 +503,7 @@ const search = (arr, item) => arr.indexOf(item)
 
 // Create a function that takes an angle in radians and returns the corresponding angle in degrees.
 const radiansToDegrees = (r) => r*180/Math.PI
+
+// Create a function that takes a name and returns a greeting in the form of a string. Don't use a normal function, use an arrow function.
+const helloName = name => `Hello ${name}!`
+
