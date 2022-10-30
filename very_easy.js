@@ -509,3 +509,6 @@ const helloName = name => `Hello ${name}!`
 
 // Create a function that takes an array and a string as arguments and returns the index of the string.
 const findIndex = (arr, str) => arr.indexOf(str)
+
+// Éowyn has written the function isOdd() to check if a given number is odd or not. Unfortunately, the function does not return the correct result for all the inputs. Help her fix the error.
+const isOdd = (n) => (n%2) ? true : false
