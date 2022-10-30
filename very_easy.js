@@ -512,3 +512,6 @@ const findIndex = (arr, str) => arr.indexOf(str)
 
 // Éowyn has written the function isOdd() to check if a given number is odd or not. Unfortunately, the function does not return the correct result for all the inputs. Help her fix the error.
 const isOdd = (n) => (n%2) ? true : false
+
+// Given the radius of a circle and the area of a square, return true if the circumference of the circle is greater than the square's perimeter and false if the square's perimeter is greater than the circumference of the circle.
+const circle_or_square = (r, a) => (2*r*Math.PI) > (Math.sqrt(a)*4)
