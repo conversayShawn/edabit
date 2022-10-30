@@ -507,3 +507,5 @@ const radiansToDegrees = (r) => r*180/Math.PI
 // Create a function that takes a name and returns a greeting in the form of a string. Don't use a normal function, use an arrow function.
 const helloName = name => `Hello ${name}!`
 
+// Create a function that takes an array and a string as arguments and returns the index of the string.
+const findIndex = (arr, str) => arr.indexOf(str)
