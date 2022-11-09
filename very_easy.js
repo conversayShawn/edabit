@@ -515,3 +515,6 @@ const isOdd = (n) => (n%2) ? true : false
 
 // Given the radius of a circle and the area of a square, return true if the circumference of the circle is greater than the square's perimeter and false if the square's perimeter is greater than the circumference of the circle.
 const circle_or_square = (r, a) => (2*r*Math.PI) > (Math.sqrt(a)*4)
+
+// Create a function that takes a number as an argument and returns "even" for even numbers and "odd" for odd numbers.
+const isEvenOrOdd = (n) => !(n%2) ? `even` : `odd`
